@@ -3,6 +3,8 @@ import Login from './pages/Login'
 import Dashboard from './pages/Dashboard'
 import Branches from './pages/Branches'
 import Enquiries from './pages/Enquiries'
+import BranchManagement from './pages/BranchManagement'
+import LegalDocuments from './pages/LegalDocuments'
 import ProtectedRoute from './components/ProtectedRoute'
 import Layout from './components/Layout'
 
@@ -22,7 +24,9 @@ export default function App() {
           <Route index element={<Navigate to="/dashboard" replace />} />
           <Route path="dashboard" element={<Dashboard />} />
           <Route path="branches" element={<Branches />} />
+          <Route path="branch-management" element={<BranchManagement />} />
           <Route path="enquiries" element={<Enquiries />} />
+          <Route path="legal" element={<LegalDocuments />} />
         </Route>
         <Route path="*" element={<Navigate to="/dashboard" replace />} />
       </Routes>

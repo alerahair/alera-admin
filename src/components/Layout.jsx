@@ -20,8 +20,14 @@ export default function Layout() {
           <NavLink to="/branches" className={({ isActive }) => isActive ? styles.active : ''}>
             Branches
           </NavLink>
+          <NavLink to="/branch-management" className={({ isActive }) => isActive ? styles.active : ''}>
+            Branch Management
+          </NavLink>
           <NavLink to="/enquiries" className={({ isActive }) => isActive ? styles.active : ''}>
             Enquiries
+          </NavLink>
+          <NavLink to="/legal" className={({ isActive }) => isActive ? styles.active : ''}>
+            Legal Documents
           </NavLink>
         </nav>
         <button className={styles.logout} onClick={handleLogout}>Logout</button>
